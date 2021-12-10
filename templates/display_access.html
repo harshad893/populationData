@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <center>
+       <h1>Displying the AccssRecords</h1>
+       <table border="2px">
+           <tr><th>Name</th>
+                <th>Date</th>
+        </tr>
+        {% for i in access %}
+            <tr>
+                <td>{{i.name}}</td>
+                <td>{{i.date}}</td>
+            </tr>
+
+        {% endfor %}
+
+
+
+
+       </table>
+
+
+
+   </center>
+</body>
+</html>
